@@ -53,13 +53,10 @@ public class Cheese {
         this.id = id;
         this.name = name;
     }
-
     @Ignore
     public Cheese(String name){
-        this.id = 0;
-        this.name = name;
+        this(0, name);
     }
-
     @Ignore
     public Cheese(){
         this(0, "");
